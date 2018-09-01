@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="navigation_drawer_open">Открыть панель навигации</string>
+    <string name="app_name">PLCManager</string>
+    <string name="btn_open">Открыть</string>
+    <string name="btn_close">Закрыть</string>
+    <string name="version">0.0.2</string>
+    <string name="app_version_num">1</string>
+    <string name="btn_send">Отправить</string>
+    <string name="txt_toyopuc_ip">Адрес контроллера</string>
+    <string name="txt_toyopuc_port">порт</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="sep">:</string>
+    <string name="txt_send_command">Команда для отправки:</string>
+    <string name="txt_response_command">Полученный ответ:</string>
+    <string name="hint_for_send_command">пример. 00-00-05-00-18-00-00-01-00</string>
+    <string name="title_tools_action_bar">Инструменты</string>
+    <string name="action_settings">Настройки</string>
+    <string name="testConnection">Проверка соединения:</string>
+    <string name="nav_header_subtitle">noskov.nv@yandex.ru</string>
+    <string name="nav_header_title">Android Studio</string>
+</resources>

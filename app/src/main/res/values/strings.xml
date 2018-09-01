@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PLCManager</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">noskov.nv@yandex.ru</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="version">0.0.2</string>
+    <string name="app_version_num">1</string>
+
+    <!--tools activity start -->
+    <string name="btn_open">Open</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_send">Send</string>
+    <string name="txt_toyopuc_ip">Toyopuc IP addres</string>
+    <string name="txt_toyopuc_port">port</string>
+    <string name="sep">:</string>
+    <string name="btn_save">Save</string>
+    <string name="txt_send_command">Command for send:</string>
+    <string name="txt_response_command">Response command:</string>
+    <string name="hint_for_send_command">ex. 00-00-05-00-18-00-00-01-00</string>
+    <string name="title_tools_action_bar">Tools</string>
+    <string name="testConnection">Test Connection:</string>
+    <!--tools activity end -->
+
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:minHeight="191dp"
+    tools:context="com.home.hhb.PLCManager.ToolsActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TestConnection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/testConnection"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="272dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_open_connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_open"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="342dp" />
+
+            <Button
+                android:id="@+id/button_send_connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_send"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="206dp" />
+
+            <Button
+                android:id="@+id/button_close_connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_close"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+            <ImageView
+                android:id="@+id/mConnectionStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="8sp"
+                app:srcCompat="@android:drawable/presence_offline" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_send_command"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="228dp" />
+
+            <EditText
+                android:id="@+id/mStringForSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789ABCDEF-"
+                android:ems="10"
+                android:hint="@string/hint_for_send_command"
+                android:inputType="textCapCharacters"
+                tools:layout_editor_absoluteY="102dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_response_command" />
+
+            <TextView
+                android:id="@+id/mStringReturn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <EditText
+                android:id="@+id/plcIp"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:ems="10"
+                android:hint="@string/txt_toyopuc_ip"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+
+                android:text="@string/sep" />
+
+            <EditText
+                android:id="@+id/plcPort"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/txt_toyopuc_port"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/btn_save" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
